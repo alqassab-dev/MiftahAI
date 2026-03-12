@@ -1,0 +1,7 @@
+{
+  "name": "Miftah — KSA Business Launcher",
+  "description": "AI-powered advisor for starting and growing businesses in Saudi Arabia, featuring a guided roadmap wizard, business model canvas generator, and pitch deck builder.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

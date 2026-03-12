@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-arabic: "Noto Kufi Arabic", sans-serif;
+
+  --color-ksa-green: #006C35;
+  --color-ksa-gold: #D4A843;
+  --color-ksa-teal: #0EA5A0;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0B1220] text-[#EDE8DC] font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-bold;
+  }
+
+  [lang="ar"] {
+    @apply font-arabic;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.neon-border {
+  @apply border border-ksa-gold/30 shadow-[0_0_15px_rgba(212,168,67,0.1)];
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
